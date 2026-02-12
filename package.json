@@ -1,0 +1,24 @@
+{
+  "name": "ani",
+  "version": "1.0.0",
+  "description": "ANI is an open-source real-time chat application built with React and Node.js. It provides a seamless chatting experience with features like user authentication, real-time messaging, and a user-friendly interface with most important feature of privacy based communication for users.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "cd Frontend && npm install && npm run dev",
+    "backend": "cd Backend && npm install && npm start",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thenetaji/ANI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/thenetaji/ANI/issues"
+  },
+  "homepage": "https://github.com/thenetaji/ANI#readme"
+}

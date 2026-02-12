@@ -1,0 +1,35 @@
+:root{
+  --primary-color: #5fcb0bFF;
+  --primary-hover: #7cb3424d;
+  --secondary-color: rgba(200, 227, 178, 0.72);
+  --secondary-hover: #9fd5744d;
+  --tertiary-color: #c9cacdFF;
+  --txt-white: #fff;
+  --txt-grey: #252525FF;
+  --muted-txt: #9d9d9dFF;
+}
+
+@font-face {
+  font-family: "Alan Sans";
+  src: url("../assests/AlanSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+  font-family: "Alan Sans", sans-serif;
+}
+
+body,html{
+  width: 100%;
+  height: 100%;
+  background-color: var(--tertiary-color);
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+}

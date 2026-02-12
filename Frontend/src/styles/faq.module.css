@@ -1,0 +1,102 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../assests/board(2).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Header */
+.header {
+  padding: 50px 70px;
+}
+
+.logo {
+  color: var(--txt-grey);
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* Main Content */
+.mainContent {
+  padding: 80px 80px 80px 80px;
+  max-width: 900px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--txt-grey);
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+}
+
+/* FAQ List */
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.faqItemContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.faqItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 2px solid rgba(37, 37, 37, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faqItem:hover {
+  padding-left: 10px;
+}
+
+.question {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--txt-grey);
+  letter-spacing: 0.5px;
+}
+
+.icon {
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--txt-grey);
+  line-height: 1;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.iconRotated {
+  transform: rotate(45deg);
+}
+
+.answer {
+  padding: 20px 0 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--muted-txt);
+  line-height: 1.6;
+  max-width: 700px;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
