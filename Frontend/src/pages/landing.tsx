@@ -23,6 +23,7 @@ export default function Landing() {
         <h6 className={styles.description}>
           Experience the future of communication with ANI
         </h6>
+      <div className={styles.line}></div>
       </main>
     </div>
   );
