@@ -1,15 +1,22 @@
 import styles from '../styles/landing.module.css';
 
-
 export default function Landing() {
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleSignUp = () => {
+    window.open('/signup', '_blank', 'width=800,height=900');
+  };
+
   return (
     <div className={styles.container}>
       {/* Header */}
       <header className={styles.header}>
-        <h1 className={styles.logo}>ANI</h1>
+        <h1 className={styles.logo} onClick={() => scrollToSection('home')} style={{ cursor: 'pointer' }}>ANI</h1>
         <div className={styles.headerButtons}>
-          <button className={styles.signupBtn}>SIGN UP</button>
-          <button className={styles.contactBtn}>CONTACT</button>
+          <button className={styles.signupBtn} onClick={handleSignUp}>SIGN UP</button>
+          <button className={styles.contactBtn} onClick={() => scrollToSection('contact')}>CONTACT</button>
         </div>
       </header>
 
@@ -20,10 +27,6 @@ export default function Landing() {
           THE BEST PRIVACY<br />
           BASED CHAT APP
         </h2>
-        <h6 className={styles.description}>
-          Experience the future of communication with ANI
-        </h6>
-      <div className={styles.line}></div>
       </main>
     </div>
   );

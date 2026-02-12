@@ -1,0 +1,152 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../assests/board(5).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 50px;
+}
+
+/* Welcome Section */
+.welcomeSection {
+  max-width: 400px;
+}
+
+.welcomeTitle {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--txt-grey);
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.welcomeText {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--muted-txt);
+  letter-spacing: 0.3px;
+}
+
+/* Form Section */
+.formSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formContainer {
+  background: var(--primary-color);
+  padding: 50px 60px;
+  border: 3px solid var(--txt-grey);
+  min-width: 450px;
+}
+
+.formTitle {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--txt-grey);
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--txt-grey);
+}
+
+.input {
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid var(--txt-grey);
+  background: rgba(139, 195, 74, 0.5);
+  color: var(--txt-grey);
+  font-family: "Alan Sans", sans-serif;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  background: rgba(139, 195, 74, 0.7);
+  border-color: var(--txt-grey);
+}
+
+/* Checkbox */
+.checkboxGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--txt-grey);
+}
+
+.checkboxLabel {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--txt-grey);
+  cursor: pointer;
+}
+
+/* Submit Button */
+.submitBtn {
+  margin-top: 20px;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background: rgba(95, 203, 11, 0.8);
+  color: var(--txt-grey);
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  align-self: center;
+}
+
+.submitBtn:hover {
+  background: rgba(95, 203, 11, 1);
+  transform: translateY(-2px);
+}
+
+/* Switch Text */
+.switchText {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: var(--txt-grey);
+}
+
+.switchLink {
+  color: var(--txt-grey);
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.switchLink:hover {
+  opacity: 0.8;
+}

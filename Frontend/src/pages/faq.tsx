@@ -4,6 +4,10 @@ import styles from '../styles/faq.module.css';
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const faqData = [
     {
       question: "DO I NEED TO SIGN-UP ?",
@@ -35,7 +39,7 @@ export default function FAQ() {
     <div className={styles.container}>
       {/* Header */}
       <header className={styles.header}>
-        <h1 className={styles.logo}>ANI</h1>
+        <h1 className={styles.logo} onClick={() => scrollToSection('home')} style={{ cursor: 'pointer' }}>ANI</h1>
       </header>
 
       {/* Main Content */}

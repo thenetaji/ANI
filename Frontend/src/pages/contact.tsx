@@ -1,11 +1,23 @@
 import styles from '../styles/contact.module.css';
 
 export default function Contact() {
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleMailUs = () => {
+    window.location.href = 'mailto:twinzler@proton.me?subject=Support Request';
+  };
+
+  const handleChat = () => {
+    window.location.href = 'https://discord.gg/1406246927300821032';
+  };
+
   return (
     <div className={styles.container}>
       {/* Header */}
       <header className={styles.header}>
-        <h1 className={styles.logo}>ANI</h1>
+        <h1 className={styles.logo} onClick={() => scrollToSection('home')} style={{ cursor: 'pointer' }}>ANI</h1>
       </header>
 
       {/* Main Content */}
@@ -25,9 +37,9 @@ export default function Contact() {
         {/* Action Buttons */}
         <div className={styles.actionSection}>
           <div className={styles.buttonsContainer}>
-            <button className={styles.mailBtn}>MAIL US</button>
+            <button className={styles.mailBtn} onClick={handleMailUs}>MAIL US</button>
             <span className={styles.orText}>OR</span>
-            <button className={styles.chatBtn}>HAVE A CHAT</button>
+            <button className={styles.chatBtn} onClick={handleChat}>HAVE A CHAT</button>
           </div>
           
           <p className={styles.replyText}>We will reply as soon as possible</p>

@@ -1,11 +1,15 @@
 import styles from '../styles/features.module.css';
 
 export default function Features() {
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className={styles.container}>
       {/* Header */}
       <header className={styles.header}>
-        <h1 className={styles.logo}>ANI</h1>
+        <h1 className={styles.logo} onClick={() => scrollToSection('home')} style={{ cursor: 'pointer' }}>ANI</h1>
       </header>
 
       <div className={styles.content}>
